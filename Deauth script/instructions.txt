@@ -1,0 +1,12 @@
+step 1:
+open terminal and type "iwconfig"
+copy the name of your wifi adapter without any blank spaces
+step 2:
+open "Deauth script folder"
+step 3:
+right click and select "open terminal here"
+step 4:
+type "bash deauth.sh"
+  
+--------------------------------------------------------------------
+
